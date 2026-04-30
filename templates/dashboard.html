@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Dashboard</h2>
+
+    <form method="GET" action="/dashboard">
+        <input name="q" placeholder="Search notes" value="{{ search or '' }}">
+        <button>Search</button>
+    </form>
+
+    <form method="POST" action="/add_note">
+        <input name="title" placeholder="Title" required>
+        <input name="content" placeholder="Content" required>
+        <button>Add Note</button>
+    </form>
+
+    <h3>Notes</h3>
+
+    {% for note in notes %}
+        <div class="note">
+            <b>{{note[1]}}</b><br>
+            {{note[2]}}
+
+        </div>
+    {% endfor %}
+
+    <p style="text-align:center;">
+        <a href="/logout">Logout</a>
+    </p>
+</div>
+
+</body>
+</html>
