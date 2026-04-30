@@ -1,3 +1,5 @@
+# secure version with password hashing
+
 from flask import Flask, render_template, request, redirect, session
 import sqlite3
 import bcrypt
