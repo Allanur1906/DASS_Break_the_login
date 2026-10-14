@@ -1,4 +1,4 @@
-# 🔐 Break the Login – DASS Project(security project)
+# 🔐 Break the Login – DASS Project
 
 ## 📌 Description
 
@@ -121,7 +121,6 @@ This project helped me understand:
 - How to secure applications properly  
 - Importance of authentication and input validation  
 - Role of logging in security monitoring  
-
 ---
 
 ## 📌 Conclusion
